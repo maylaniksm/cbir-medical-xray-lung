@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pencarian Citra Medis</title>
+    <style>
+        /* ==== GLOBAL STYLE ==== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #d4e8f8, #f4f9ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* ==== CARD CONTAINER ==== */
+        .container {
+            background: white;
+            width: 420px;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ==== TITLE ==== */
+        h2 {
+            color: #006ecf;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #0078d7;
+            margin-bottom: 15px;
+        }
+
+        /* ==== FILE INPUT ==== */
+        input[type=file] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            width: 100%;
+            border: 2px dashed #0078d7;
+            border-radius: 8px;
+            background-color: #f9fcff;
+            cursor: pointer;
+            transition: border 0.3s ease, background-color 0.3s ease;
+        }
+
+        input[type=file]:hover {
+            border-color: #005fa3;
+            background-color: #eef7ff;
+        }
+
+        /* ==== BUTTON ==== */
+        button {
+            margin-top: 25px;
+            background: linear-gradient(135deg, #0078d7, #005fa3);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #005fa3, #004b87);
+        }
+
+        /* ==== FOOTER / INFO ==== */
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .footer span {
+            color: #0078d7;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🩻</div>
+        <h2>🔍 Sistem Pencarian Citra Medis</h2>
+
+        <form action="/search" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Cari Gambar Serupa</button>
+        </form>
+
+        <div class="footer">
+            © 2025 <span>Image Retrieval System</span> 
+        </div>
+    </div>
+</body>
+</html>
