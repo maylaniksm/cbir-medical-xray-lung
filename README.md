@@ -9,7 +9,7 @@
 
 **Sistem Pencarian Citra Medis Berbasis Deep Learning untuk Diagnosis Awal Penyakit Paru**
 
-[📊 Dataset](https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia) • [💻 Google Colab](https://colab.research.google.com/drive/1fF2QZIh-OR0aHJAMs0A2NIQLMQHDEUYv?usp=sharing) • [📖 Documentation](#dokumentasi)
+[📊 Dataset](https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia) • [💻 Google Colab](https://colab.research.google.com/drive/1fF2QZIh-OR0aHJAMs0A2NIQLMQHDEUYv?usp=sharing) 
 
 </div>
 
